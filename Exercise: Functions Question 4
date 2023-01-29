@@ -1,0 +1,5 @@
+# TODO: Set the project_cost variable to the cost of the project
+project_cost = get_cost(432,144,400,15)
+
+# Check your answer
+q4.check()
