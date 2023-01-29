@@ -1,0 +1,5 @@
+# TODO: Change the message
+print("Hail Freyja! Hail Odin! Hail Thor! Hail the Gods and Goddesses of the North!")
+
+# DO NOT REMOVE: Mark this question as completed 
+q2.check()
