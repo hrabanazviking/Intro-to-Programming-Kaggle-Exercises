@@ -1,0 +1,15 @@
+# TODO: Edit the function to return the correct bill for different
+# values of num_gallons
+def get_water_bill(num_gallons):
+    if num_gallons < 8001:
+        bill = (num_gallons / 1000) * 5
+    elif num_gallons < 22001:
+        bill = (num_gallons / 1000) * 6
+    elif num_gallons < 30001:
+        bill = (num_gallons / 1000) * 7
+    else:
+        bill = (num_gallons / 1000) * 10
+    return bill
+
+# Check your answer
+q3.check()
