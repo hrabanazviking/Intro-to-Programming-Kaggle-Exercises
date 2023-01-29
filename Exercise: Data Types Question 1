@@ -1,0 +1,15 @@
+# Define a float
+y = 1.
+print(y)
+print(type(y))
+
+# Convert float to integer with the int function
+z = int(y)
+print(z)
+print(type(z))
+
+# Uncomment and run this code to get started!
+print(int(1.2321))
+print(int(1.747))
+print(int(-3.94535))
+print(int(-2.19774))
