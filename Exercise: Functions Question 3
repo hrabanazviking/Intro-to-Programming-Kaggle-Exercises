@@ -1,0 +1,7 @@
+# TODO: Finish defining the function
+def get_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon):
+    cost = ((sqft_walls + sqft_ceiling) / sqft_per_gallon) * cost_per_gallon
+    return cost
+
+# Check your answer
+q3.check()
