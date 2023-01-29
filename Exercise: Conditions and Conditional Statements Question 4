@@ -1,0 +1,11 @@
+# TODO: Edit the function to return the correct bill for different
+# values of GB
+def get_phone_bill(gb):
+    if gb <= 15:
+        bill = 100
+    else:
+        bill = ((gb - 15) * 100) + 100
+    return bill
+
+# Check your answer
+q4.check()
