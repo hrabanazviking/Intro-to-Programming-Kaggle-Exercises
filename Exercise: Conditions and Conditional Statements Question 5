@@ -1,0 +1,34 @@
+# import functions needed to make get_labels work
+from learntools.intro_to_programming.ex4q5 import excess_sugar, excess_saturated_fat, excess_trans_fat, excess_sodium, excess_calories
+
+def get_labels(food_type, serving_size, calories_per_serving, saturated_fat_g, trans_fat_g, sodium_mg, sugars_g):
+    # Print messages based on findings
+    if excess_sugar(sugars_g, calories_per_serving) == True:
+        print("EXCESO AZÚCARES / EXCESS SUGAR")
+    if excess_saturated_fat(saturated_fat_g, calories_per_serving) == True:
+        print("EXCESO GRASAS SATURADAS / EXCESS SATURATED FAT")
+    if excess_trans_fat(trans_fat_g, calories_per_serving) == True:
+        print("EXCESO GRASAS TRANS / EXCESS TRANS FAT")
+    if excess_sodium(calories_per_serving, sodium_mg) == True:
+        print("EXCESO SODIO / EXCESS SODIUM")
+    if excess_calories(food_type, calories_per_serving, serving_size) == True:
+        print("EXCESO CALORÍAS / EXCESS CALORIES")
+        
+# bologna https://world.openfoodfacts.org/product/4099100179378/bologna
+get_labels("solid", 32, 110, 2.5, 0, 400, 1)
+
+# zucaritas cereal https://world.openfoodfacts.org/product/7501008023624/zucaritas-kellogg-s
+# TODO: Uncomment the line below, fill in the values, and run the function
+get_labels("solid", 40, 150, 0, 0, 150, 16)
+
+# mozzarella sticks https://world-es.openfoodfacts.org/producto/0062325540104/mozzarella-cheese-sticks
+# TODO: Uncomment the line below, fill in the values, and run the function
+get_labels("solid", 21, 68, 3, 0.2, 208, 0)
+
+# pillsbury cookies https://world.openfoodfacts.org/product/0069700118545/biscuits-au-sucre-pretraches
+# TODO: Uncomment the line below, fill in the values, and run the function
+get_labels("solid", 30, 120, 1.5 .1, 110, 9)
+
+# sunkist orange soda https://world-es.openfoodfacts.org/producto/0078000113464/orange-soda-sunkist
+# TODO: Uncomment the line below, fill in the values, and run the function
+get_labels("liquid", 355, 160, 0, 0, 65, 44)
