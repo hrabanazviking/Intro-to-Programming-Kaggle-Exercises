@@ -1,0 +1,5 @@
+# Uncomment and run this code to get started!
+print(3 * True)
+print(-3.1 * True)
+print(type("abc" * False))
+print(len("abc" * False))
