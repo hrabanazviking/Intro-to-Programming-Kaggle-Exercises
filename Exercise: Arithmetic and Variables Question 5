@@ -1,0 +1,33 @@
+# Load the data from the titanic competition
+import pandas as pd
+titanic_data = pd.read_csv("../input/titanic/train.csv")
+
+# Show the first five rows of the data
+titanic_data.head()
+
+# Number of total passengers
+total = len(titanic_data)
+print(total)
+
+# Number of passengers who survived
+survived = (titanic_data.Survived == 1).sum()
+print(survived)
+
+# Number of passengers under 18
+minors = (titanic_data.Age < 18).sum()
+print(minors)
+
+# TODO: Fill in the value of the survived_fraction variable
+survived_fraction = survived / total 
+
+# Print the value of the variable
+print(survived_fraction)
+
+# TODO: Fill in the value of the minors_fraction variable
+minors_fraction = minors / total
+
+# Print the value of the variable
+print(minors_fraction)
+
+# DO NOT REMOVE: Check your answer
+q5.check()
