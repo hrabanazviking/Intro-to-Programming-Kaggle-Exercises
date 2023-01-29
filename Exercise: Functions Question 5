@@ -1,0 +1,17 @@
+test_value = 9.01
+
+rounded_value = math.ceil(test_value)
+print(rounded_value)
+
+def get_actual_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon):
+    total_sqft = sqft_walls + sqft_ceiling
+    gallons_needed = total_sqft / sqft_per_gallon
+    gallons_to_buy = math.ceil(gallons_needed)
+    cost = cost_per_gallon * gallons_to_buy
+    return cost
+
+q5.check()
+
+get_actual_cost(432, 144, 400, 15) 
+
+get_actual_cost(594, 288, 400, 15) 
